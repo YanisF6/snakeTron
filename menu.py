@@ -22,14 +22,14 @@ class Main:
         self.window = pygame.display.set_mode((self.size))
         self.fps = 60
         self.nav_mus = mixer.Sound(r"data/music/navigation.wav")
-        # self.intro = pygame.image.load(r"data/images/template.png")
+        self.intro = pygame.image.load(r"data/images/template.png")
         self.played = False
         self.load_settings = False
         pygame.display.set_caption("SnakeTron")
         self.clock = pygame.time.Clock()
 
-        # video = VideoFileClip(r'data/videos/Snake_games_intro.mp4')
-        # video.preview()
+        video = VideoFileClip(r'data/videos/Snake_games_intro.mp4')
+        video.preview()
 
         self.colors = {
             "white": (255, 255, 255),
